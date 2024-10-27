@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript from Zero</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
+<body class="p-10 bg-sky-500/75">
+    <div id="content" class="justify-center">
+        <h1 class="bg-[#e72eb6] text-6xl text-center p-4 text-lime-100 py-6">Hello Tailwind!</h1>
+        <div class="justify-center flex mt-20 text-3xl text-bold"> <button onclick="changeText()" id="js" class="btn-active btn-secondary p-6 item-center rounded-lg justify-center">Click To See JS Magic</button></div>
+        
     
+         
+        <!-- Stat Section  -->
+        <div class="bg-[#e72eb6] py-24 sm:py-32 mt-20">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                  <dt class="text-white text-2xl leading-7 text-gray-600"> <hr>Learn 10 minutes </dt>
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-lime-100 pb-4 sm:text-5xl">Tailwind is Awesome</dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                  <dt class="text-white text-2xl leading-7 text-gray-600"> <hr> Think 10 minutes</dt>
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-lime-100 pb-4 sm:text-5xl">Tailwind is Responsive</dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                  <dt class="text-white text-2xl leading-7 text-gray-600"> <hr> Design with <br>less than 10 minutes</dt>
+                  <dd class="order-first text-3xl font-semibold tracking-tight text-lime-100 pb-4 sm:text-5xl">Tailwind is Fantastic</dd>
+                </div>
+              </dl>
+            </div>
+          </div>         
+    </div>
+<script src="index.js"></script>
 </body>
 </html>
