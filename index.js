@@ -30,7 +30,7 @@ el.textContent = '$' + total;
 
 
 function changeText(){
-    var newMsg = "Hey, you have changed this text with the JS custom function changeText() :)";
+    var newMsg = "Haha, we have changed this text with the JS custom function changeText() :)";
     var el = document.getElementById('js');
     el.textContent = newMsg;
 }
